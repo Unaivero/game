@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    
+     <script src="./game2.html"></script>
+        
+    <script src="./game.angular.min.js"></script>
+
+    <script src="./gameapp.js"></script>
+
+
+    <script src="./gameScoreController.js"></script>
+
+  
+    <script src="./gamevarapp.js"></script>
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href="./game.css" rel="stylesheet">
+
+  </head>
+  <body ng-app='GameboardApp'>
+    <div class="header">
+      <h1 class="logo">GameBoard</h1>
+    </div>
+
+    <div class="main" ng-controller="ScoreController">
+      <div class="container">
+        
+        <div class="row" ng-repeat="score in scores">
+          <game info="score"> </game>  
+
+         
+          
+            
+        
+          
+        </div>
+      
+      </div>
+    </div>
+    
+
+  </body>
+</html>
